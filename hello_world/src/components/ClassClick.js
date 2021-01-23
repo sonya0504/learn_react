@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class ClassClick extends Component {
+class ClassClick extends Component {
 
     clickHandle () {
         console.log('clicked me');
