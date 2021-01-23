@@ -1,22 +1,31 @@
 import React from 'react';
 
-// function Greet () {
-//     return <h1>Hello Default Export!</h1>
-// };
+// first way to destructuring props:
 
-// arrow function and named export:
+// const Greet = ({ name, heroName, children }) => {
+    
+//     return(
+//         <div>
+//             <h1>Hello {name} a.k.a. {heroName}</h1>
+//             {children}
+//         </div>
+//     );
+       
+// }
 
-// export const Greet = () => <h1>Hello Named Export</h1>;
 
-const Greet = (props) => {
-    console.log('props', props);
+// second way to destructuring props:
+
+const Greet = ( props ) => {
+    
+    const { name, heroName, children} = props;
+
     return(
         <div>
-            <h1>Hello Named {props.name} a.k.a. {props.heroName}</h1>
-            {props.children}
+            <h1>Hello {name} a.k.a. {heroName}</h1>
+            {children}
         </div>
     );
-       
 }
 
 export default Greet;
