@@ -1,11 +1,17 @@
 import React from 'react';
 import './App.css';
-import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './appStyle.css';
+import styles from './appStyle.module.css';
 
 function App() {
   return (
     <div className="App">
-      <NameList />
+      <Stylesheet primary={true} />
+      <Inline />
+      <h2 className='error'>Error</h2>
+      <h2 className={styles.success}>Success</h2>
     </div>
   );
 }
