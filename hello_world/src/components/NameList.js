@@ -26,7 +26,7 @@ function NameList() {
 
     return (
         <div>
-            {personList.map(person => <Person person={person}/>)}
+            {personList.map(person => <Person key={person.id} person={person}/>)}
         </div>
     )
 
