@@ -3,6 +3,8 @@ import Person from './Person';
 
 function NameList() {
 
+    const nameList = ['Bruce', 'Clark', 'Diana'];
+
     const personList = [
         {
             id: 1,
@@ -26,7 +28,7 @@ function NameList() {
 
     return (
         <div>
-            {personList.map(person => <Person key={person.id} person={person}/>)}
+            {nameList.map((name, index) => <h2 key={index}>{index} {name}</h2>)}
         </div>
     )
 
