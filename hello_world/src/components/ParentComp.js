@@ -1,39 +1,7 @@
-// import React, { PureComponent } from 'react';
-import PureComp from './PureComp';
-import RegComp from './RegComp';
+import React, { PureComponent, Component } from 'react';
+import MemoComp from './MemoComp';
 
-// class ParentComp extends PureComponent {
-
-//     constructor(props) {
-//         super(props)
-    
-//         this.state = {
-//              name: 'Hey!',
-//         }
-//     }
-    
-//     componentDidMount(){
-//         setInterval(() => {
-//             this.setState({
-//                 name: 'Hey You!',
-//             })
-//         }, 2000)
-//     }
-
-//     render() {
-//         console.log('*******Parent Component*******')
-//         return (
-//             <>
-//                 <PureComp name={this.state.name} />
-//                 <RegComp name={this.state.name} />
-//             </>
-//         )
-//     }
-// }
-
-import React, { PureComponent } from 'react'
-
-class ParentComp extends PureComponent {
+class ParentComp extends Component {
     constructor(props) {
                 super(props)
             
@@ -54,8 +22,7 @@ class ParentComp extends PureComponent {
                 console.log('*******Parent Component*******')
                 return (
                     <>
-                        <PureComp name={this.state.name} />
-                        <RegComp name={this.state.name} />
+                        <MemoComp name={this.state.name} />
                     </>
                 )
             }
