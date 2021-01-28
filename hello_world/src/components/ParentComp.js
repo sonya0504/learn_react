@@ -1,4 +1,4 @@
-import React, { PureComponent, Component } from 'react';
+import React, { Component } from 'react';
 import MemoComp from './MemoComp';
 
 class ParentComp extends Component {
