@@ -1,11 +1,22 @@
 import React from 'react';
 import './App.css';
-import PortalDemo from './components/PortalDemo';
+import ErrorBundary from './components/ErrorBoundary';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <div className="App">
-      <PortalDemo />
+      <ErrorBundary>
+        <Hero heroName="Batman" />
+      </ErrorBundary>
+
+      <ErrorBundary>
+        <Hero heroName="Superman" />
+      </ErrorBundary>
+      
+      <ErrorBundary>
+        <Hero heroName="Joker" />
+      </ErrorBundary>
     </div>
   );
 }
