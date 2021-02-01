@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/clickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
 
 function App() {
   return (
     <div className="App">
-      <ClickCounter name="IronMan"/>
-      <HoverCounter />
+      <ClickCounterTwo/>
+      <HoverCounterTwo />
     </div>
   );
 }
