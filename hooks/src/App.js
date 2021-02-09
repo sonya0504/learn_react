@@ -1,10 +1,12 @@
 import './App.css';
-import HookCounterFour from './components/HookCounterFour';
+import ClassCounterUseEffect from './components/ClassCounterUseEffect';
+import HookCounterUseEffect from './components/HookCounterUseEffect';
 
 function App() {
   return (
     <div className="App">
-      <HookCounterFour /> 
+      <ClassCounterUseEffect /> 
+      <HookCounterUseEffect />
     </div>
   );
 }
