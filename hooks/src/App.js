@@ -1,20 +1,12 @@
 import React from 'react';
 import './App.css';
-import ComponentC from './components/ComponentC'
-
-export const UserContext = React.createContext();
-export const ChannelContext = React.createContext();
+import HookCounterOne from './components/HookCounterOne'
 
 function App() {
 
-
   return (
     <div className="App">
-      <UserContext.Provider value="hey You!">
-        <ChannelContext.Provider value="You're gooood!">
-          <ComponentC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
+      <HookCounterOne />
     </div>
   );
 }
