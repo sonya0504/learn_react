@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import UseRedcuserCounter from './components/useRedcuserCounter';
+import UseReducerCounterTwo from './components/UseReducerCounterTwo';
 
 function App() {
 
   return (
     <div className="App">
-      <UseRedcuserCounter />
+      <UseReducerCounterTwo />
     </div>
   );
 }
