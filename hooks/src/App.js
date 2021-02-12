@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import FetchingDataTwo from './components/FetchingDataTwo';
+import Counter from './components/useMemo/Counter';
 
 function App() {
 
   return (
     <div className="App">
-      <FetchingDataTwo />
+      <Counter />
       
     </div>
   );
