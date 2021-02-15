@@ -1,14 +1,12 @@
 import React from 'react';
 import './App.css';
-import CounterOne from './components/customHook/CounterOne';
-import CounterTwo from './components/customHook/CounterTwo';
+import UserForm from './components/customHook/UserForm';
 
 function App() {
 
   return (
     <div className="App">
-      <CounterOne />
-      <CounterTwo />
+      <UserForm />
     </div>
   );
 }
