@@ -1,13 +1,14 @@
 import React from 'react';
 import './App.css';
-import FocusInput from './components/useRef/FocusInput';
+import DocTitleOne from './components/customHook/DocTitleOne';
+import DocTitleTwo from './components/customHook/DocTitleTwo';
 
 function App() {
 
   return (
     <div className="App">
-      <FocusInput />
-      
+      <DocTitleOne />
+      <DocTitleTwo />
     </div>
   );
 }
